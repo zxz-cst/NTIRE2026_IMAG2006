@@ -1,0 +1,3 @@
+ [sd-2-1-base](https://pan.baidu.com/s/1mCnUjlfwjvkYIGiSi1xo2w 提取码: rx27)
+ [LoRA_weights](https://pan.baidu.com/s/1WjB2v2pk2HN3nQgN1LgIUw 提取码: ewp6)
+ [empty_prompt_embeds.pt]( https://pan.baidu.com/s/1Z2FX5h8x5-wxi9EHufWMmQ 提取码: sbeh)

@@ -1,0 +1,12 @@
+{
+  "sd_path": "sd2-1-base",
+  "lora_path": "IMAG2006_Lora",
+  "prompt": "",
+  "prompt_embeds_path": "empty_prompt_embeds.pt",
+  "mid_timestep": 273,
+  "process_size": 512,
+  "upscale": 4,
+  "align_method": "wavelet",
+  "weight_dtype": "bf16",
+  "png_compress_level": 0
+}
