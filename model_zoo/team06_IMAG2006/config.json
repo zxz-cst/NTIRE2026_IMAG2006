@@ -1,8 +1,8 @@
 {
-  "sd_path": "sd2-1-base",
-  "lora_path": "IMAG2006_Lora",
+  "sd_path": "./model_zoo/team06_IMAG2006/sd2_1_base",
+  "lora_path": "./model_zoo/team06_IMAG2006/IMAG2006_Lora",
   "prompt": "",
-  "prompt_embeds_path": "empty_prompt_embeds.pt",
+  "prompt_embeds_path": "./model_zoo/team06_IMAG2006/empty_prompt_embeds.pt",
   "mid_timestep": 273,
   "process_size": 512,
   "upscale": 4,

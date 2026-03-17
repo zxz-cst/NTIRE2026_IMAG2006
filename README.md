@@ -9,15 +9,15 @@ This repository provides the inference code for our NTIRE 2026 Mobile Real-World
 Before running the code, please download the following files and prepare their local paths.
 
 ### 1.1 Stable Diffusion 2.1 Base
--  [sd-2-1-base](https://pan.baidu.com/s/1mCnUjlfwjvkYIGiSi1xo2w 提取码: rx27)
+-  [sd2_1_base](https://pan.baidu.com/s/1mCnUjlfwjvkYIGiSi1xo2w 提取码: rx27)
 
 ### 1.2 LoRA weights
 - [LoRA_weights](https://pan.baidu.com/s/1WjB2v2pk2HN3nQgN1LgIUw 提取码: ewp6)
 
-  please place your LoRA weights in a local directory and use that path in `config.json`.
-
 ### 1.3 Empty prompt embeddings
 - [empty_prompt_embeds.pt]( https://pan.baidu.com/s/1Z2FX5h8x5-wxi9EHufWMmQ 提取码: sbeh)
+
+​	Our method does not require prompts; it only needs to load an empty prompt to satisfy the input requirement of SD 2.1 base and can then work properly.
 
 ---
 
@@ -45,10 +45,10 @@ Use the correct local paths for the downloaded weights:
 
 ```json
 {
-  "sd_path": "path/to/sd2.1_base",
-  "lora_path": "path/to/lora_model",
+  "sd_path": "/path/to/sd2.1_base",
+  "lora_path": "/path/to/lora_model",
   "prompt": "",
-  "prompt_embeds_path": "path/to/empty_prompt_embeds.pt",
+  "prompt_embeds_path": "/path/to/empty_prompt_embeds.pt",
   "mid_timestep": 273,
   "process_size": 512,
   "upscale": 4,
@@ -94,7 +94,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py \
 
 If you only want the minimal workflow, follow these four steps:
 
-1. Download `sd-2-1-base`, `lora_model`, and `empty_prompt_embeds.pt`.
+1. Download `sd2_1_base`, `lora_model`, and `empty_prompt_embeds.pt`.
 2. Create the conda environment and install dependencies.
 3. Update `config.json` with your local model paths.
 4. Run `test.py` with the desired input and output directories.
