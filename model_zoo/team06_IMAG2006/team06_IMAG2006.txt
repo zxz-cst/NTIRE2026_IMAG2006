@@ -1,3 +1,3 @@
- [sd2_1_base](https://pan.baidu.com/s/1mCnUjlfwjvkYIGiSi1xo2w 提取码: rx27)
- [LoRA_weights](https://pan.baidu.com/s/1WjB2v2pk2HN3nQgN1LgIUw 提取码: ewp6)
- [empty_prompt_embeds.pt]( https://pan.baidu.com/s/1Z2FX5h8x5-wxi9EHufWMmQ 提取码: sbeh)
+[sd2_1_base](https://pan.baidu.com/s/1zKizc0wxQUaMuo9YaH5v4A?pwd=dp52 提取码: dp52)
+[LoRA_weights](https://pan.baidu.com/s/1z615Dd9vbaUr3em3BZzYhA?pwd=8423 提取码: 8423)
+[empty_prompt_embeds.pt](https://pan.baidu.com/s/1BYwPvO0XlAty2PuiMzTvIQ?pwd=3z5m 提取码: 3z5m)

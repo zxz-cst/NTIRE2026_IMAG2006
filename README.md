@@ -6,16 +6,16 @@ This repository provides the inference code for our NTIRE 2026 Mobile Real-World
 
 ## 1. Download the required weights
 
-Before running the code, please download the following files and prepare their local paths.
+Before running the code, please download the following files and place them in `NTIRE2026_IMAG2006/model_zoo/team06_IMAG2006`.
 
 ### 1.1 Stable Diffusion 2.1 Base
--  [sd2_1_base](https://pan.baidu.com/s/1mCnUjlfwjvkYIGiSi1xo2w 提取码: rx27)
+-  [sd2_1_base](https://pan.baidu.com/s/1zKizc0wxQUaMuo9YaH5v4A?pwd=dp52 提取码: dp52)
 
 ### 1.2 LoRA weights
-- [LoRA_weights](https://pan.baidu.com/s/1WjB2v2pk2HN3nQgN1LgIUw 提取码: ewp6)
+- [LoRA_weights](https://pan.baidu.com/s/1z615Dd9vbaUr3em3BZzYhA?pwd=8423 提取码: 8423)
 
 ### 1.3 Empty prompt embeddings
-- [empty_prompt_embeds.pt]( https://pan.baidu.com/s/1Z2FX5h8x5-wxi9EHufWMmQ 提取码: sbeh)
+- [empty_prompt_embeds.pt](https://pan.baidu.com/s/1BYwPvO0XlAty2PuiMzTvIQ?pwd=3z5m 提取码: 3z5m)
 
 ​	Our method does not require prompts; it only needs to load an empty prompt to satisfy the input requirement of SD 2.1 base and can then work properly.
 
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 Edit the following file:
 
 ```bash
-NTIRE2026_Mobile_RealWorld_ImageSR/model_zoo/team06_IMAG2006/config.json
+NTIRE2026_IMAG2006/model_zoo/team06_IMAG2006/config.json
 ```
 
 Use the correct local paths for the downloaded weights:

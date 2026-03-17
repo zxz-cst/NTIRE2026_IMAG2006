@@ -36,8 +36,6 @@ class IMAG2006(torch.nn.Module):
         self.vae = vae
         self.unet = unet
 
-        print(f"Current one-step mid_timestep = {self.mid_timestep}")
-
     def _gaussian_weights(self, tile_width, tile_height, nbatches):
         from numpy import pi, exp, sqrt
         import numpy as np
@@ -157,12 +155,8 @@ class IMAG2006(torch.nn.Module):
         _, _, h, w = lq_latent.size()
 
         if h * w <= tile_size * tile_size:
-            if verbose:
-                print(f"[Tiled Latent] input latent = {h}x{w}, no tile.")
             pred_img = self._forward_no_tile(lq_latent, prompt_embeds)
         else:
-            if verbose:
-                print(f"[Tiled Latent] input latent = {h}x{w}, tiled inference.")
             pred_img = self._forward_tile(lq_latent, prompt_embeds, tile_size, tile_overlap)
 
         return pred_img
